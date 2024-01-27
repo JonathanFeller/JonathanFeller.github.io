@@ -1,0 +1,9 @@
+html {
+  font-family: "Open Sans";
+}
+
+.picture {
+  width: 256px;
+  height: 256px;
+  border-radius: 100%;
+}
