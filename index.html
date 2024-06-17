@@ -6,17 +6,29 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta property="og:site_name" content="Jonathan Feller | Software Engineer | Hardware Engineer">
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    <meta
+      property="og:site_name"
+      content="Jonathan Feller | Software Engineer | Hardware Engineer"
     />
     <link
-    href="https://fonts.googleapis.com/css?family=Open Sans"
-    rel="stylesheet"
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
     <title>Jonathan Feller | Software & Hardware Engineer</title>
   </head>
   <body>
@@ -25,24 +37,38 @@
         <img class="picture" src="./assets/mypic.png" />
         <div class="info">
           <h1 class="name">Jonathan <span class="bold">Feller</span></h1>
-          <h4 class="summary">With over 10 years of experience, I specialize in React, Node.js, and I am exploring Rust and HTMX. I enjoy side projects in networking, computer graphics, 3D printing, and microcontrollers.</h3>
-          <ul style="display: flex; flex-direction: row">
-            <li>
-              <a href="https://linkedin.com/in/jonathan-feller" target="_blank"
-                ><img src="./assets/lin-icon.svg" width="40px"
-              /></a>
-            </li>
-            <li>
-              <a href="https://github.com/JonathanFeller" target="_blank"
-                ><img src="./assets/gh-icon.svg" width="40px"
-              /></a>
-            </li>
-            <li>
-              <a href="mailto:contact@jonathanfeller.com" target="_blank"
-                ><img src="./assets/mail-icon.svg" width="40px"
-              /></a>
-            </li>
-          </ul>
+          <h3 class="summary">
+            With over 10 years of experience, I specialize in React, Node.js,
+            and I am exploring Rust and HTMX. I enjoy side projects in
+            networking, computer graphics, 3D printing, and microcontrollers.
+          </h3>
+          <div class="links">
+            <ul style="display: flex; flex-direction: row">
+              <li>
+                <a
+                  href="https://linkedin.com/in/jonathan-feller"
+                  target="_blank"
+                  ><img src="./assets/lin-icon.svg" width="40px"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/JonathanFeller" target="_blank"
+                  ><img src="./assets/gh-icon.svg" width="40px"
+                /></a>
+              </li>
+              <li>
+                <a href="mailto:contact@jonathanfeller.com" target="_blank"
+                  ><img src="./assets/mail-icon.svg" width="40px"
+                /></a>
+              </li>
+            </ul>
+            <a
+              class="schedule"
+              href=""
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jonathanfeller/project-intro'});return false;"
+              >Schedule time with me</a
+            >
+          </div>
         </div>
       </div>
       <div class="container">
@@ -79,9 +105,6 @@
                 I started my own company as more and more people wanted me to
                 work on custom projects, and I needed to have official contracts
                 in place.
-              </p>
-              <p class="fineprint">
-                The company turned official on my birthday, weird present?
               </p>
             </div>
             <div></div>
@@ -227,3 +250,4 @@
     <footer>Jonathan Feller 2024</footer>
   </body>
 </html>
+ 
