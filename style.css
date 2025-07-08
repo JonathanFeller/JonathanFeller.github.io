@@ -1,5 +1,11 @@
 html {
-  font-family: "Open Sans";
+  /* font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: #FFFFFF; white background   */
+  font-family: 'Microsoft Sans Serif', Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  background-color: #C0C0C0;
+  color: black;
 }
 
 body {
@@ -26,13 +32,15 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 ul {
   list-style-type: none;
 }
+
 li {
-  text-decoration: none;
   padding-right: 8px;
 }
+
 li:last-child {
   padding-right: 0;
 }
@@ -40,7 +48,9 @@ li:last-child {
 .container {
   width: 100%;
   max-width: 1024px;
+  padding: 32px 0;
 }
+
 .bold {
   font-weight: 700;
 }
@@ -65,7 +75,7 @@ li:last-child {
 .picture {
   width: 256px;
   height: 256px;
-  border-radius: 100%;
+  border: 1px solid #000;
 }
 
 .name {
@@ -78,35 +88,44 @@ div.job-grid {
   display: grid;
   grid-row-gap: 1rem;
 }
+
 div.job-row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-gap: 4px;
 }
-div.job-row > .timespan {
+
+div.job-row>.timespan {
   grid-column: span 1;
   text-align: right;
-  font-size: 0.8em;
   padding-right: 5px;
 }
-div.job-row > .logo {
+
+div.job-row>.logo {
   grid-column: span 1;
-  padding-right: 5px;
+  margin-right: 5px;
 }
-div.job-row > .logo img {
+
+div.job-row>.logo img {
   width: 100%;
+  border: none;
+  border-radius: 0;
+  padding: 2px;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
 }
-div.job-row > .description {
+
+div.job-row>.description {
   grid-column: span 10;
   text-align: left;
   padding-right: 5px;
 }
 
 p.fineprint {
+  margin-top: 0.5rem;
   font-size: 0.7em;
 }
 
 footer {
-  font-size: 0.7em;
   padding: 32px;
 }
 
@@ -117,20 +136,16 @@ footer {
   justify-content: space-between;
 }
 
-.schedule {
-  display: flex;
-  align-items: center;
-  border: 1px solid #000;
-  padding: 8px 12px;
+.button {
   text-decoration: none;
-  background: #000;
-  color: #fff;
-  border-radius: 0.5rem;
-}
-
-.schedule:hover {
-  background-color: #fff;
-  color: #000;
+  background: silver;
+  border: none;
+  border-radius: 0;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+  box-sizing: border-box;
+  color: transparent;
+  padding: 4px;
+  text-shadow: 0 0 #222;
 }
 
 @media only screen and (min-width: 800px) {

@@ -10,15 +10,6 @@
       property="og:site_name"
       content="Jonathan Feller | Software Engineer | Hardware Engineer"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open Sans"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       href="https://assets.calendly.com/assets/external/widget.css"
@@ -32,14 +23,16 @@
     <title>Jonathan Feller | Software & Hardware Engineer</title>
   </head>
   <body>
-    <main>
+    <div>
       <div class="main-section">
-        <img class="picture" src="./assets/mypic.png" />
         <div class="info">
-          <h1 class="name">Jonathan <span class="bold">Feller</span></h1>
+          <h1 class="name">
+            Jonathan
+            <span class="bold">Feller</span>
+          </h1>
           <h3 class="summary">
             With over 10 years of experience, I specialize in React, Node.js,
-            and I am exploring Rust and HTMX. I enjoy side projects in
+            and I am exploring Rust and HTMX. I have side projects in
             networking, computer graphics, 3D printing, and microcontrollers.
           </h3>
           <div class="links">
@@ -48,22 +41,22 @@
                 <a
                   href="https://linkedin.com/in/jonathan-feller"
                   target="_blank"
-                  ><img src="./assets/lin-icon.svg" width="40px"
-                /></a>
+                  >LinkedIn</a
+                >
               </li>
               <li>
                 <a href="https://github.com/JonathanFeller" target="_blank"
-                  ><img src="./assets/gh-icon.svg" width="40px"
-                /></a>
+                  >Github</a
+                >
               </li>
               <li>
                 <a href="mailto:contact@jonathanfeller.com" target="_blank"
-                  ><img src="./assets/mail-icon.svg" width="40px"
-                /></a>
+                  >E-mail</a
+                >
               </li>
             </ul>
             <a
-              class="schedule"
+              class="button"
               href=""
               onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jonathanfeller/project-intro'});return false;"
               >Schedule time with me</a
@@ -71,24 +64,31 @@
           </div>
         </div>
       </div>
+    </div>
+    <hr />
+    <div>
       <div class="container">
         <div class="job-grid">
           <div class="job-row">
-            <div class="timespan">2021-</div>
+            <div class="timespan">2021 -</div>
             <div class="logo">
-              <a href="https://www.toptal.com/"
-                ><img width="100%" src="./assets/toptal.png"
+              <a href="https://toptal.com/"
+                ><img width="100%" src="./assets/toptal.gif"
               /></a>
             </div>
             <div class="description">
               <p>
                 Working with flagship clients and stealth startups. More on my
-                <a href="#">Toptal profile page</a>.
+                <a
+                  href="https://www.toptal.com/resume/jonathan-feller"
+                  target="_blank"
+                  >Toptal profile page</a
+                >.
               </p>
             </div>
           </div>
           <div class="job-row">
-            <div class="timespan">2020-</div>
+            <div class="timespan">2020 -</div>
             <div class="logo">
               <a
                 href="javascript:void(0);"
@@ -106,10 +106,10 @@
             <div></div>
           </div>
           <div class="job-row">
-            <div class="timespan">2020-2021</div>
+            <div class="timespan">2020 - 2021</div>
             <div class="logo">
               <a href="https://gunargessner.com/"
-                ><img src="./assets/gunarltd.png"
+                ><img src="./assets/gunarltd.gif"
               /></a>
             </div>
             <div class="description">
@@ -126,7 +126,7 @@
           </div>
           <!--
           <div class="job-row">
-            <div class="timespan">2020-2020</div>
+            <div class="timespan">2020 - 2020</div>
             <div class="logo"><img src="./assets/capgemini.png" /></div>
             <div class="description">
               <p>Worked on McDonnald's POS system.</p>
@@ -135,16 +135,14 @@
           </div>
           -->
           <div class="job-row">
-            <div class="timespan">2020-2020</div>
+            <div class="timespan">2020 - 2020</div>
             <div class="logo">
               <a href="https://moutsit.com/">
                 <img src="./assets/mouts.png" />
               </a>
             </div>
             <div class="description">
-              <p>
-                Worked on very customized projects for flagship clients.
-              </p>
+              <p>Worked on very customized projects for flagship clients.</p>
               <p>
                 Responsible for creating web platforms and applications from the
                 ground up, handling full-stack development.
@@ -156,9 +154,9 @@
             </div>
           </div>
           <div class="job-row">
-            <div class="timespan">2019-2020</div>
+            <div class="timespan">2019 - 2020</div>
             <div class="logo">
-              <a href="https://www.senior.com.br/">
+              <a href="https://senior.com.br/">
                 <img src="./assets/senior.png" />
               </a>
             </div>
@@ -188,7 +186,7 @@
             </div>
           </div>
           <div class="job-row">
-            <div class="timespan">2015-2018</div>
+            <div class="timespan">2015 - 2018</div>
             <div class="logo">
               <a href="https://wk.com.br/">
                 <img src="./assets/wk-sistemas.png" />
@@ -196,7 +194,7 @@
             </div>
             <div class="description">
               <p>
-                Initiated the creation of the Corporate Tax Module entirely from
+                Initiated the creation of the Corporate Tax Module from
                 the ground up.
               </p>
               <p>
@@ -206,8 +204,7 @@
               </p>
               <p>
                 Authored a migration tool facilitating the seamless transfer of
-                data from the legacy software to the new system. Successfully
-                integrated the Corporate Tax Module with other existing modules.
+                data from the legacy software to the new system. Integrated the Corporate Tax Module with other existing modules.
               </p>
               <p class="fineprint">
                 Shout out to
@@ -216,22 +213,22 @@
             </div>
           </div>
           <div class="job-row">
-            <div class="timespan">2014-2015</div>
+            <div class="timespan">2014 - 2015</div>
             <div class="logo">
-              <a href="https://www.govbr.com.br/">
+              <a href="https://govbr.com.br/">
                 <img src="./assets/govbr.png" />
               </a>
               <a
                 href="javascript:void(0);"
                 onclick="alert('This company was adquired by the above');"
-                ><img src="./assets/cetil.png"
+                ><img src="./assets/cetil.gif"
               /></a>
             </div>
             <div class="description">
               <p>
                 Contributed to the development of the revenue module within the
                 city town hall software, focusing on tax calculations for
-                property and land taxes.
+                property/land taxes and active debt.
               </p>
               <p>
                 Played a key role in integrating third-party systems for report
@@ -241,7 +238,8 @@
           </div>
         </div>
       </div>
-    </main>
+    </div>
+    <hr />
     <footer>Jonathan Feller &mdash; 2025</footer>
   </body>
 </html>
